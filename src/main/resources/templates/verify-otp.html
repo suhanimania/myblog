@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Verify-Otp</title>
+</head>
+<body>
+      <h1>Verify OTP</h1>
+<form action="/verify-otp" method="get">
+    <input type="hidden" name="phoneNumber" th:value="${phoneNumber}"/>
+    <label for="enteredOtp">Enter OTP:</label>
+    <input type="text" id="enteredOtp" name="enteredOtp" required />
+    <button type="submit">Verify</button>
+
+</form>
+</body>
+</html>
